@@ -19,9 +19,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'itc210' ); ?></a>
 
+<!-- Start of Navigation -->
+<div id="nav">
+	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+	<!--wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'my_extra_menu_class' ) );-->
+</div>
+<!-- End of Navigation -->
 	
 
 	<div id="content" class="site-content">

@@ -2,11 +2,57 @@
 Theme Name: itc210
 Theme URI: http://52.11.250.158
 Description: A theme for Dreams Unilimited
-Author: Kristie Barker
+Author: Kristie Barker, Spencer Echon
 Author URI: http://kb-my-portfolio.com
 Version: 1.0
 Tags:
 License:
 License URI:
 General comments (optional).
+*/
+
+/*
+Plugins used:
+
+WP Migrate DB-
+https://deliciousbrains.com/
+
+Wordpress Importer-
+https://wordpress.org/plugins/wordpress-importer/
+
+Events Manager-
+http://wp-events-plugin.com/
+
+Gallery-
+https://web-dorado.com/products/wordpress-photo-gallery-plugin.html
+
+Youtube-
+http://www.embedplus.com/
+
+Facebook-
+https://wordpress.org/plugins/facebook/
+	Used to connect facebook with the website
+	Ability to embed facebook posts
+
+MashShare-
+https://www.mashshare.net/
+	All in one social media sharing tool
+
+Giga Slider-
+http://www.wp-buy.com/
+	Slider based content management for videos/photos
+
+Mailchimp-
+http://mailchimp.com/
+	Used for newsletter signup
+
+Contact Form 7-
+http://contactform7.com/
+	Used to create forms for the contact page
+
+Wordpress Calls to Action-
+https://github.com/inboundnow/cta
+	Adds calls to action for any photos or posts
+
+
 */

@@ -66,3 +66,10 @@ https://github.com/inboundnow/cta
 
 
 */
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+body { 
+     padding-top: 60px; 
+     padding-bottom: 40px; 
+}

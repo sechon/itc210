@@ -1,7 +1,7 @@
-<hr>
+     <hr>
 
       <footer>
-        <p>© Company 2012</p>
+        <p>© Dreams Unlimited 2015</p>
       </footer>
 
     </div> <!-- /container -->

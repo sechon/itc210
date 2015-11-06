@@ -14,7 +14,8 @@
 
 <p>
 	<label>Email address: </label>
-	<input type="email" name="EMAIL" placeholder="Your email address" required />
+	<input type="name" name="NAME" placeholder="Name" required />
+    <input type="email" name="EMAIL" placeholder="Your email address" required />
 </p>
 
 <p>

@@ -16,7 +16,7 @@
         $my_child_slug = get_permalink().$my_child->post_name.'/';
     ?>
 <div class="jumbotron">
-    <h3><?php //echo $my_child->post_title;?></h3>
+    <h3><?php echo $my_child->post_title;?></h3>
     <?php echo do_shortcode($my_child->post_content); ?>
 </div><!-- end jumbotron -->
 <?php endforeach; ?>

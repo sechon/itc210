@@ -2,14 +2,26 @@
 
 <!-- START CONTENT -->
 <div id="content" class="page">
-    <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
-    <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
-    <?php endwhile; else: ?>
-		<p><?php _e('Sorry, this page does not exist.'); ?></p>
-    <?php endif; ?>
-</div>
+    <?php
+        $my_slug = get_permalink();
+        $args = array(
+           'numberposts' => -1,
+           'post_parent' => $post->ID,
+           'post_type' => 'page',
+           'post_status' => 'publish',
+           'orderby' => 'menu_order,title',
+           'order' => 'ASC');
+        $my_pagelist = &get_children($args);
+
+        if ($my_pagelist) : foreach($my_pagelist as $my_child) : 
+        $my_child_slug = $my_slug.$my_child->post_name.'/';
+    ?>
+<div class="jumbotron">
+    <h3><?php //echo $my_child->post_title;?></h3>
+    <?php echo $my_child->post_content; ?>
+</div><!-- end jumbotron -->
+<?php endforeach; ?>
+<?php endif; ?>
 <!-- END CONTENT -->
 
 <?php get_footer(); ?>

@@ -1,27 +1,45 @@
      <hr>
 
-      <footer>
-        <p>© Dreams Unlimited 2015</p>
-      </footer>
-
     </div> <!-- /container -->
+<div class="rows">
+    <div class="col-md-4"> 
+        <div id="social">
+        <ul>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/youtube.svg" alt="YouTube"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/pinterest.svg" alt="Pinterest"></a></li>
+        </ul>
+        </div><!-- End Social -->
+    </div>
+    <div class="col-md-4">
+        <p>
+            <a href="#"><button type="button" class="btn btn-default btn-lg">DONATE</button></a>
+        </p>
+        </div>
+    <div class="col-md-4">
+        <p>
+        <label><button type="button" class="btn btn-default btn-lg">SUBSCRIBE</button></label>
+        </p><p>
+        <input type="name" name="NAME" placeholder="Name" required />
+        </p><p>
+        <input type="email" name="EMAIL" placeholder="Your email address" required />
+        </p>
 
-<p><a href="#">facebook</a></p>
-<p><a href="#">twitter</a></p>
-<p><a href="#">youtube</a></p>
-<p><a href="#">pinterest</a></p>
-<p><a href="#">Donate</a></p>
-
-<p>
-	<label>Email address: </label>
-	<input type="name" name="NAME" placeholder="Name" required />
-    <input type="email" name="EMAIL" placeholder="Your email address" required />
-</p>
-
-<p>
-	<input type="submit" value="Sign up" />
-</p>
-
+        <p>
+        <input type="submit" value="Sign up" />
+        </p>
+    </div>
+</div>
+<div class="rows">
+      <footer>
+        <div class="col-md-4">  
+        <p>© Dreams Unlimited 2015</p>
+        </div><div class="col-md-4">
+        <p>Privacy And Terms of Agreement</p>
+        </div>
+      </footer>
+</div>
     <?php wp_footer(); ?>
 
   </body>

@@ -73,3 +73,12 @@ body {
      padding-top: 60px; 
      padding-bottom: 40px; 
 }
+
+.social-logo {
+    height: 35px;
+    width: 35px;
+}
+
+#social ul li{
+    list-style:none;
+    display: inline;

@@ -30,11 +30,23 @@
 <body <?php body_class(); ?>>
 
 <!-- Start of Navigation -->
+<nav class="navi">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#dreams">DREAMS</a></li>
+      <li><a href="#events">EVENTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+    
+<!-- Start of old Navigation
 <div id="nav">
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-	<!--wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'my_extra_menu_class' ) );-->
+
+<?php //wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
 </div>
-<!-- End of Navigation -->
+End of old Navigation -->
 	
 
 	<div id="content" class="site-content">

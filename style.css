@@ -67,6 +67,13 @@ https://github.com/inboundnow/cta
 
 */
 
+/* Browser Reset */
+body, body * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Bootstrap */
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-responsive.css'); 
 body { 

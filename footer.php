@@ -5,10 +5,10 @@
     <div class="col-md-4"> 
         <div id="social">
         <ul>
-        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/facebook.svg" alt="Facebook"></a></li>
-        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/twitter.svg" alt="Twitter"></a></li>
-        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/youtube.svg" alt="YouTube"></a></li>
-        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://spencerechon.com/itc210/images/pinterest.svg" alt="Pinterest"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://52.11.250.158/wp-content/uploads/2015/11/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://52.11.250.158/wp-content/uploads/2015/11/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://52.11.250.158/wp-content/uploads/2015/11/youtube.svg" alt="YouTube"></a></li>
+        <li><a href="javascript:;" target="_blank"><img class="social-logo" src="http://52.11.250.158/wp-content/uploads/2015/11/pinterest.svg" alt="Pinterest"></a></li>
         </ul>
         </div><!-- End Social -->
     </div>

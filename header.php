@@ -25,14 +25,29 @@
 	<title><?php bloginfo("name") . wp_title( '|' ); ?></title>
 	
 	<?php wp_head(); ?>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script src="script.js"></script> 
+
 </head>
 
 <body <?php body_class(); ?>>
 
 <!-- Start of Navigation -->
-<div id="nav">
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-	<!--wp_nav_menu( array( 'theme_location' => 'extra-menu', 'container_class' => 'my_extra_menu_class' ) );-->
+<div class="navigation responsive">
+
+<ul> 
+ 	<li><a href="#">Home</a></li> 
+ 	<li><a href="#">About</a></li> 
+ 	<li><a href="#">Dreams</a></li> 
+ 	<li><a href="#">Events</a></li> 
+ 	<li><a href="#">Contact</a></li> 
+ 	<li class="hidden trigger"><a rel="nofollow" href="#">Show Menu</a></li> 
+ </ul>
+ </div> 
+ <div class="mini-navigation hidden"></div> 
+
+	
 </div>
 <!-- End of Navigation -->
 	

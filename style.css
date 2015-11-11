@@ -84,6 +84,7 @@ body {
  	max-width:900px; 
  	margin:0 auto; 
  	padding:50px 30px; 
+    position: fixed;
  }
  .navigation ul { 
  	height:40px;  

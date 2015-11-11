@@ -70,10 +70,11 @@ https://github.com/inboundnow/cta
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-responsive.css'); 
 body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+    padding-top: 60px; 
+    padding-bottom: 40px; 
 }
 
+<<<<<<< HEAD
 
 
 * { 
@@ -173,3 +174,47 @@ body {
  	} 
  	 
  } 
+=======
+/* Start of Navigation */
+.navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    list-style-type: none;
+}
+
+.navi ul {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.navi ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.navi ul li a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navi ul li a:hover {
+    color: black;
+}
+
+/* Start of Social */
+.social-logo {
+    height: 35px;
+    width: 35px;
+}
+
+#social ul li{
+    list-style:none;
+    display: inline;
+>>>>>>> origin/master

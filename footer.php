@@ -18,16 +18,8 @@
         </p>
         </div>
     <div class="col-md-4">
-        <p>
-        <label><button type="button" class="btn btn-default btn-lg">SUBSCRIBE</button></label>
-        </p><p>
-        <input type="name" name="NAME" placeholder="Name" required />
-        </p><p>
-        <input type="email" name="EMAIL" placeholder="Your email address" required />
-        </p>
-
-        <p>
-        <input type="submit" value="Sign up" />
+        <button type="button" class="btn btn-default btn-lg">NEWSLETTER</button>
+        <div class='mailmunch-forms-widget-176708'></div>
         </p>
     </div>
 </div>

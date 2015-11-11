@@ -34,29 +34,25 @@
 <body <?php body_class(); ?>>
 
 <!-- Start of Navigation -->
-<<<<<<< HEAD
+
 <div class="navigation responsive">
 
 <ul> 
- 	<li><a href="#">Home</a></li> 
- 	<li><a href="#">About</a></li> 
- 	<li><a href="#">Dreams</a></li> 
- 	<li><a href="#">Events</a></li> 
- 	<li><a href="#">Contact</a></li> 
+ 	<li><a href="#home">Home</a></li> 
+ 	<li><a href="#about">About</a></li> 
+ 	<li><a href="#dreams">Dreams</a></li> 
+ 	<li><a href="#events">Events</a></li> 
+ 	<li><a href="#contact">Contact</a></li> 
  	<li class="hidden trigger"><a rel="nofollow" href="#">Show Menu</a></li> 
  </ul>
  </div> 
  <div class="mini-navigation hidden"></div> 
 
 	
-=======
+
 <nav class="navi">
     <ul>
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#dreams">DREAMS</a></li>
-      <li><a href="#events">EVENTS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      
     </ul>
 </nav>
     

@@ -74,8 +74,6 @@ body {
     padding-bottom: 40px; 
 }
 
-<<<<<<< HEAD
-
 
 * { 
  	font-family:'arial'; 
@@ -180,39 +178,6 @@ body {
  	} 
  	 
  } 
-=======
-/* Start of Navigation */
-.navi {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 50px;
-    background-color: gray;
-    list-style-type: none;
-}
-
-.navi ul {
-    text-align: center;
-    padding: 8px 0px;
-}
-
-.navi ul li {
-    display: inline;
-    padding: 20px;
-}
-
-.navi ul li a {
-    padding: 8px;
-    text-decoration: none;
-    color: white;
-    
-}
-
-.navi ul li a:hover {
-    color: black;
-}
 
 /* Start of Social */
 .social-logo {
@@ -223,4 +188,3 @@ body {
 #social ul li{
     list-style:none;
     display: inline;
->>>>>>> origin/master

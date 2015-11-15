@@ -84,7 +84,7 @@
       <!-- query for history --><p>
         <?php
             $args = array(
-                'pagename' => 'home 2/history',);
+                'pagename' => 'home 2/history-2',);
             $query = new WP_Query($args);
         ?>
         <?php if ( $query->have_posts() ) : ?>
@@ -101,7 +101,7 @@
         <!-- query for book --><p>
         <?php
             $args = array(
-                'pagename' => 'home 2/book',);
+                'pagename' => 'home 2/book-tay-val-2',);
             $query = new WP_Query($args);
         ?>
         <?php if ( $query->have_posts() ) : ?>

@@ -52,22 +52,73 @@
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
     
-<!-- query for about -->
-    <?php
-        $args = array(
-            'pagename' => 'home 2/about',);
-        $query = new WP_Query($args);
-    ?>
-    <?php if ( $query->have_posts() ) : ?>
-        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
-            <?php the_content(); ?>
-            </div>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-    <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    <?php endif; ?>
+<!-- Start of tab section -->
+<div id="about">
+<div class="jumbotron">
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#about2">ABOUT</a></li>
+    <li><a data-toggle="tab" href="#history">HISTORY</a></li>
+    <li><a data-toggle="tab" href="#book">BOOK TAY & VAL</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="about2" class="tab-pane fade in active">
+      <!-- query for about --><p>
+        <?php
+            $args = array(
+                'pagename' => 'home 2/about',);
+            $query = new WP_Query($args);
+        ?>
+        <?php if ( $query->have_posts() ) : ?>
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+        </p>
+    </div>
+    <div id="history" class="tab-pane fade">
+      <!-- query for history --><p>
+        <?php
+            $args = array(
+                'pagename' => 'home 2/history',);
+            $query = new WP_Query($args);
+        ?>
+        <?php if ( $query->have_posts() ) : ?>
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+        </p>
+    </div>
+    <div id="book" class="tab-pane fade">
+        <!-- query for book --><p>
+        <?php
+            $args = array(
+                'pagename' => 'home 2/book',);
+            $query = new WP_Query($args);
+        ?>
+        <?php if ( $query->have_posts() ) : ?>
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+        </p>
+    </div>
+  </div>
+</div>
+</div>
+</div><!-- close about id -->
+
     
 <!-- query for dreams -->
     <?php

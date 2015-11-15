@@ -1,36 +1,158 @@
 <?php get_header(); ?>
 
 <!-- START CONTENT -->
-<div id="content" class="page">
-    <!-- loop to grab content from actual front page -->
-    <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
-    <?php the_content(); ?>
-    <?php endwhile; else: ?>
-		<p><?php _e('Sorry, this page does not exist.'); ?></p>
-    <?php endif; ?>
-    
-<!-- loop to grab content from children of front page -->
+<!-- query for front page -->
     <?php
         $args = array(
-           'numberposts' => -1,
-           'post_parent' => $post->ID,
-           'post_type' => 'page',
-           'post_status' => 'publish',
-           'orderby' => 'menu_order,title',
-           'order' => 'ASC');
-        $my_pagelist = &get_children($args);
-
-        if ($my_pagelist) : foreach($my_pagelist as $my_child) : 
-        $my_child_slug = get_permalink().$my_child->post_name.'/';
+            'pagename' => 'dreams unlimited photo gallery',);
+        $query = new WP_Query($args);
     ?>
-<!-- used jumbotron from bootstrap/ may change later -->
-<div class="jumbotron">
-    <h3><?php //echo $my_child->post_title;?></h3>
-    <?php echo do_shortcode($my_child->post_content); ?>
-</div><!-- end jumbotron -->
-<?php endforeach; ?>
-<?php endif; ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for quote -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/quote',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for video -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/video',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for about -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/about',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for dreams -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/dreams',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for testimonials -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/testimonials',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for events -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/events',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for contact -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/contact',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+    
+<!-- query for sponsors -->
+    <?php
+        $args = array(
+            'pagename' => 'dreams unlimited photo gallery/sponsors',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="jumbotron">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
 <!-- END CONTENT -->
 
 <?php get_footer(); ?>

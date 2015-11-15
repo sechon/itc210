@@ -21,7 +21,7 @@
 <!-- query for quote -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/quote',);
+            'pagename' => 'home 2/quote',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -38,7 +38,7 @@
 <!-- query for video -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/video',);
+            'pagename' => 'home 2/video',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -55,7 +55,7 @@
 <!-- query for about -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/about',);
+            'pagename' => 'home 2/about',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -72,7 +72,7 @@
 <!-- query for dreams -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/dreams',);
+            'pagename' => 'home 2/dreams',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -89,7 +89,7 @@
 <!-- query for testimonials -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/testimonials',);
+            'pagename' => 'home 2/testimonials',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -106,7 +106,7 @@
 <!-- query for events -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/events',);
+            'pagename' => 'home 2/events',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -123,7 +123,7 @@
 <!-- query for contact -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/contact',);
+            'pagename' => 'home 2/contact',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>
@@ -140,7 +140,7 @@
 <!-- query for sponsors -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery/sponsors',);
+            'pagename' => 'home 2/sponsors',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>

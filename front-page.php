@@ -4,7 +4,7 @@
 <!-- query for front page -->
     <?php
         $args = array(
-            'pagename' => 'dreams unlimited photo gallery',);
+            'pagename' => 'home 2',);
         $query = new WP_Query($args);
     ?>
     <?php if ( $query->have_posts() ) : ?>

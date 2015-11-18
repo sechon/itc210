@@ -140,7 +140,7 @@ nav a#pull {
 .social-logo {
     height: 35px;
     width: 35px;
-   
+}
 @media screen and (max-width: 600px) {
     nav { 
         height: auto;

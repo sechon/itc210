@@ -136,6 +136,10 @@ nav a#pull {
     display: none;
 }
 
+/* Start of Social */
+.social-logo {
+    height: 35px;
+    width: 35px;
    
 @media screen and (max-width: 600px) {
     nav { 

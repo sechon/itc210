@@ -12,7 +12,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<!-- Le styles -->
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 	
@@ -26,8 +26,26 @@
 	
 	<?php wp_head(); ?>
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-    <script src="script.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
 
 </head>
 
@@ -35,26 +53,17 @@
 
 <!-- Start of Navigation -->
 
-<div class="navigation responsive">
-
-<ul> 
- 	<li><a href="#home">Home</a></li> 
- 	<li><a href="#about">About</a></li> 
- 	<li><a href="#dreams">Dreams</a></li> 
- 	<li><a href="#events">Events</a></li> 
- 	<li><a href="#contact">Contact</a></li> 
- 	<li class="hidden trigger"><a rel="nofollow" href="#">Show Menu</a></li> 
- </ul>
- </div> 
- <div class="mini-navigation hidden"></div> 
-
-	
-
-<nav class="navi">
-    <ul>
-      
+<nav class="clearfix">
+    <ul class="clearfix">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#dreams">DREAMS</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li> 
     </ul>
+    <a href="#" id="pull">Menu</a>
 </nav>
+
     
 <!-- Start of old Navigation
 <div id="nav">

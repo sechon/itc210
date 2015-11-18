@@ -89,102 +89,121 @@ body {
     height: 50px;
     list-style-type: none;
  }
- .navigation ul { 
- 	height:40px;  
- 	padding:0 10px 0 0; 
- 	background: grey; 
- 	border-radius:4px; 
- 	margin:0 0 0 0; 
- } 
- .navigation ul li { 
- 	float:left; 
- 	list-style:none;		  
- 	border-right:1px solid #1e7759; 
- 	padding:10px 20px 10px 20px; 
- } 
- .navigation ul li:first-child{ 
- 	padding-left:50px; 
- 	border-radius:4px 0 0 4px; 
- } 
- .navigation ul li:hover { 
- 	background:#47987c; 
- } 
- .navigation ul li a { 
- 	color:#fff; 
- 	font-size:12px; 
- 	text-decoration:none; 
- 	text-shadow: 1px 1px 1px #000 
- } 
- .navigation ul li a:hover{		  
- 	text-decoration:underline; 
- } 
- .hidden { 
- 	display:none; 
- } 
  
- 
- .mini-navigation { 
- 	border-left:1px solid #ccc; 
- 	border-bottom:1px solid #ccc; 
- 	border-right:1px solid #ccc; 
- 	padding:0 0 0 0; 
- 	margin-left:5px; 
- 	margin-right:5px; 
- 	border-radius:0 0 8px 8px; 
- } 
- .mini-navigation ul { 
- 	padding:0 0 0 0; 
- 	margin:0 0 0 0; 
- } 
- .mini-navigation ul li { 
- 	margin:0 0 0 0; 
- 	padding:10px 18px 12px 23px; 
- 	list-style:none; 
- 	border-bottom:1px solid #ebebeb; 
- } 
- .mini-navigation ul li:hover { 
- 	background:#f6f6f6; 
- } 
- .mini-navigation ul li a { 
- 	text-decoration:none; 
- 	font-size:12px; 
- 	color:#1e7759; 
- } 
- .mini-navigation ul li a:hover { 
- 	text-decoration:underline; 
- } 
- .mini-navigation ul li:last-child{ 
- 	border-bottom:none; 
- 	padding-bottom:15px; 
- } 
- .mini-navigation ul li:last-child:hover { 
- 	border-radius:0 0 8px 8px; 
- } 
- 
- 
- @media (max-width: 796px) { 
- 	 .navigation.responsive ul li { 
- 		display:none; 
- 	 } 
- 	 .navigation.responsive ul li.hidden { 
- 		display:block; 
- 	 } 
- 	 .navigation.responsive ul li.hidden:hover { 
- 		border-radius:4px 0 0 4px; 
- 	 } 
- 	 .navigation.responsive ul li.hidden a{ 
- 		background:url('menu.png')no-repeat 0 -5px; 
- 		padding-left:24px; 
- 	} 
- 	 
- } 
-
-/* Start of Social */
-.social-logo {
-    height: 35px;
-    width: 35px;
+ nav {
+    height: 40px;
+    width: 100%;
+    background: #455868;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #283744;
+}
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+    border-right: 1px solid #576979;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+    border-right: 0;
+}
+nav a:hover, nav a:active {
+    background-color: #8c99a4;
+}
+nav a#pull {
+    display: none;
 }
 
-#social ul li{
-    list-style:none;
-    display: inline;
+   
+@media screen and (max-width: 600px) {
+    nav { 
+        height: auto;
+    }
+    nav ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+        border-right: 1px solid #576979;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+}
+@media only screen and (max-width : 480px) {
+    nav {
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        display: block;
+        background-color: #283744;
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.PNG') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
+@media only screen and (max-width : 320px) {
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        border-bottom: 1px solid #576979;
+    }
+}
+

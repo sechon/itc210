@@ -78,17 +78,7 @@ body {
 * { 
  	font-family:'arial'; 
  } 
- .main { 
- 	max-width:900px; 
- 	margin:0 auto; 
- 	padding:50px 30px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    height: 50px;
-    list-style-type: none;
- }
+ 
  
  nav {
     height: 40px;
@@ -97,7 +87,7 @@ body {
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
-    position: relative;
+    position: fixed;
     border-bottom: 2px solid #283744;
 }
 nav ul {

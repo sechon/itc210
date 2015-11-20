@@ -9,7 +9,7 @@
     ?>
     <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
+            <div class="dreams">
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>
@@ -26,7 +26,7 @@
     ?>
     <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
+            <div class="dreams">
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>
@@ -43,7 +43,7 @@
     ?>
     <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
+            <div class="dreams">
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>
@@ -54,7 +54,7 @@
     
 <!-- Start of tab section -->
 <div id="about">
-<div class="jumbotron">
+<div class="dreams">
 <div class="container">
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#about2">ABOUT</a></li>
@@ -128,7 +128,24 @@
     ?>
     <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
+            <div class="dreams">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>  
+
+<!-- query for testimonials -->
+    <?php
+        $args = array(
+            'pagename' => 'home 2/testimonials',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="dreams">  
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>
@@ -136,45 +153,40 @@
     <?php else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
-    
-<!-- Testimonial/Events Section -->
-<div class="jumbotron">    
-<div class="row"> 
-    <div class="col-md-3 col-md-offset-1">
-    <!-- query for testimonials -->
-        <?php
-            $args = array(
-                'pagename' => 'home 2/testimonials',);
-            $query = new WP_Query($args);
-        ?>
-        <?php if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-    </div>
 
-    <div class="col-md-6 col-md-offset-2">
-    <!-- query for events -->
-        <?php
-            $args = array(
-                'pagename' => 'home 2/events',);
-            $query = new WP_Query($args);
-        ?>
-        <?php if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-    </div>
-</div>        
-</div>
+<!-- query for book us -->
+    <?php
+        $args = array(
+            'pagename' => 'home 2/book-tay-val-2',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="dreams">  
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+
+<!-- query for events -->
+    <?php
+        $args = array(
+            'pagename' => 'home 2/events',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="dreams">  
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
     
 <!-- query for contact -->
     <?php
@@ -184,7 +196,7 @@
     ?>
     <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
+            <div class="dreams">
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>
@@ -201,7 +213,7 @@
     ?>
     <?php if ( $query->have_posts() ) : ?>
         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="jumbotron">
+            <div class="dreams">
             <?php the_content(); ?>
             </div>
         <?php endwhile; ?>

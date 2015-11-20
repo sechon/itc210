@@ -143,6 +143,11 @@ nav a#pull {
     width: 35px;
 }
 
+#social ul li{
+    list-style:none;
+    display: inline;
+}
+
 @media screen and (max-width: 600px) {
     nav { 
         height: auto;

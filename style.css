@@ -194,7 +194,6 @@ nav a#pull {
     padding: 30px 10px 30px 10px;
     color: white;
     background-color: #d35b64;
-    overflow:auto;
     border-radius: 6px;
     
 }
@@ -209,7 +208,6 @@ nav a#pull {
     padding: 10px;
     color:black;
     background-color: #999999;
-    overflow:auto;
     border-radius: 6px;
     margin-bottom: 30px;
     

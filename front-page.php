@@ -138,6 +138,7 @@
     <?php endif; ?>  
 
 <!-- query for testimonials -->
+<div class="strike-testimonials">testimonials</div>
     <?php
         $args = array(
             'pagename' => 'home 2/testimonials',);
@@ -155,6 +156,7 @@
     <?php endif; ?>
 
 <!-- query for book us -->
+<div class="strike-book">book us</div>
     <?php
         $args = array(
             'pagename' => 'home 2/book-tay-val-2',);
@@ -172,6 +174,7 @@
     <?php endif; ?>
 
 <!-- query for events -->
+<div class="strike-calendar">calendar</div>
     <?php
         $args = array(
             'pagename' => 'home 2/events',);
@@ -189,6 +192,7 @@
     <?php endif; ?>
     
 <!-- query for contact -->
+<div class="strike-contact">contact</div>
     <?php
         $args = array(
             'pagename' => 'home 2/contact',);

@@ -302,7 +302,7 @@ nav a#pull {
     margin-left: 15px;
 }
 
-.strike-testimonails {
+.strike-testimonials {
     color: white;
     background-color: #cb434f;
     border-radius: 12px;
@@ -315,13 +315,13 @@ nav a#pull {
     margin-bottom: 30px;
 }
 
-.strike-testimonails > span {
+.strike-testimonials > span {
     position: relative;
     display: inline-block;
 }
 
-.strike-testimonails > span:before,
-.strike-testimonails > span:after {
+.strike-testimonials > span:before,
+.strike-testimonials > span:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -330,12 +330,12 @@ nav a#pull {
     background: white;
 }
 
-.strike-testimonails > span:before {
+.strike-testimonials > span:before {
     right: 100%;
     margin-right: 15px;
 }
 
-.strike-testimonails > span:after {
+.strike-testimonials > span:after {
     left: 100%;
     margin-left: 15px;
 }

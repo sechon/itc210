@@ -151,7 +151,7 @@ nav a#pull {
 
 /* Start of dreams container */
 .dreams {
-  padding: 30px 10px 30px 10px;
+  padding: 30px;
   color: inherit;
 }
 .dreams h1,
@@ -191,7 +191,7 @@ nav a#pull {
 
 /* Start of footer containers */
 .subscribe {
-    padding: 30px 10px 30px 10px;
+    padding: 30px;
     color: white;
     background-color: #d35b64;
     border-radius: 6px;
@@ -205,7 +205,7 @@ nav a#pull {
 }
 
 .donate {
-    padding: 10px;
+    padding: 10px 30px;
     color:black;
     background-color: #999999;
     border-radius: 6px;

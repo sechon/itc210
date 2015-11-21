@@ -141,10 +141,87 @@ nav a#pull {
     width: 35px;
 }
 
+#social ul {
+    padding: 0;
+}
+
 #social ul li{
     list-style:none;
     display: inline;
 }
+
+/* Start of dreams container */
+.dreams {
+  padding: 30px 10px 30px 10px;
+  color: inherit;
+}
+.dreams h1,
+.dreams .h1 {
+  color: inherit;
+}
+.dreams p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.dreams > hr {
+  border-top-color: #d5d5d5;
+}
+.container .dreams,
+.container-fluid .dreams {
+  border-radius: 6px;
+}
+.dreams .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .dreams {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .dreams,
+  .container-fluid .dreams {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .dreams h1,
+  .dreams .h1 {
+    font-size: 63px;
+  }
+}
+
+/* Start of footer containers */
+.subscribe {
+    padding: 30px 10px 30px 10px;
+    color: white;
+    background-color: #d35b64;
+    overflow:auto;
+    border-radius: 6px;
+    
+}
+
+.subscribe p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.donate {
+    padding: 10px;
+    color:black;
+    background-color: #999999;
+    overflow:auto;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    
+}
+
+.donate p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+
 
 @media screen and (max-width: 600px) {
     nav { 

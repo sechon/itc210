@@ -15,6 +15,7 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<!-- Le styles -->
 	<link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/bootstrap/css/bootstrap.css">
 	
 	 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

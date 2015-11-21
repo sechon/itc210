@@ -67,10 +67,8 @@ https://github.com/inboundnow/cta
 
 */
 body { 
-    padding-top: 0px; 
-    padding-bottom: 40px; 
+    padding: 60px 10px 40px 10px; 
 }
-
 
 * { 
  	font-family:'arial'; 
@@ -187,6 +185,159 @@ nav a#pull {
   .dreams .h1 {
     font-size: 63px;
   }
+}
+
+/* Start seperator bars */
+.strike-contact {
+    color: white;
+    background-color: #837069;
+    border-radius: 12px;
+    font-size: 55px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.strike-contact > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike-contact > span:before,
+.strike-contact > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.strike-contact > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike-contact > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.strike-calendar {
+    color: white;
+    background-color: orange;
+    border-radius: 12px;
+    font-size: 55px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.strike-calendar > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike-calendar > span:before,
+.strike-calendar > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.strike-calendar > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike-calendar > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.strike-book {
+    color: white;
+    background-color: yellow;
+    border-radius: 12px;
+    font-size: 55px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.strike-book > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike-book > span:before,
+.strike-book > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.strike-book > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike-book > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.strike-testimonails {
+    color: white;
+    background-color: #cb434f;
+    border-radius: 12px;
+    font-size: 55px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.strike-testimonails > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike-testimonails > span:before,
+.strike-testimonails > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.strike-testimonails > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike-testimonails > span:after {
+    left: 100%;
+    margin-left: 15px;
 }
 
 /* Start of footer containers */

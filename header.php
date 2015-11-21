@@ -25,7 +25,10 @@
 	<title><?php bloginfo("name") . wp_title( '|' ); ?></title>
 	
 	<?php wp_head(); ?>
-	
+    
+    <link type="text/css" href="bootstrap/css/bootstrap.css">	
+    <link type="text/css" href="bootstrap/css/bootstrap-responsive.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>
 		$(function() {

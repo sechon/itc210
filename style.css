@@ -196,6 +196,7 @@ nav a#pull {
     background-color: #d35b64;
     overflow:auto;
     border-radius: 6px;
+    max-width: 100%;
     
 }
 
@@ -212,6 +213,7 @@ nav a#pull {
     overflow:auto;
     border-radius: 6px;
     margin-bottom: 30px;
+    max-width: 100%;
     
 }
 

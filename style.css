@@ -66,12 +66,19 @@ https://github.com/inboundnow/cta
 
 
 */
+
+@font-face {
+    font-family: perspective-sans;
+    src: url(/fonts/persans.ttf);
+    font-weight: normal;
+}
+
 body { 
     padding: 60px 10px 40px 10px; 
 }
 
 * { 
- 	font-family:'arial'; 
+ 	font-family:'perspective-sans'; 
  } 
  
  

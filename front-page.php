@@ -56,10 +56,10 @@
 <div id="about">
 <div class="dreams">
 <div class="container">
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#about2">ABOUT</a></li>
-    <li><a data-toggle="tab" href="#history">HISTORY</a></li>
-    <li><a data-toggle="tab" href="#book">BOOK TAY & VAL</a></li>
+  <ul class="nav nav-pills nav-justified nav-custom">
+    <li class="active pill-one"><a data-toggle="pill" href="#about2">ABOUT</a></li>
+    <li class="pill-two"><a data-toggle="pill" href="#history">HISTORY</a></li>
+    <li class="pill-three"><a data-toggle="pill" href="#book">BOOK US</a></li>
   </ul>
 
   <div class="tab-content">

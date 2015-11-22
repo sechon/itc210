@@ -340,6 +340,38 @@ nav a#pull {
     margin-left: 15px;
 }
 
+/* Start of pill overides */
+.nav-custom > li.active > a, .nav-custom > li.active > a:hover, .nav-custom > li.active > a:focus {
+    opacity: 0.5 !important;
+}
+
+.nav-custom > li > a {
+    padding: 45px 10px  !important;
+}
+
+.nav-custom > li.pill-one > a {
+    background-color:rgb(237, 148, 34)  !important;
+}
+
+.nav-custom > li.pill-two > a {
+    background-color:rgb(189, 21, 34)  !important;
+}
+
+.nav-custom > li.pill-three > a {
+    background-color:rgb(230, 46, 46)  !important;
+}
+
+.nav-custom > li > a {
+    border-radius: 14px  !important;
+    font-size: 36px  !important;
+    font-weight: bold  !important;
+    color: white  !important;
+}
+
+.nav-custom > li {
+    padding: 10px  !important;
+}
+
 /* Start of footer containers */
 .subscribe {
     padding: 30px;

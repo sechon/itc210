@@ -27,7 +27,7 @@
             <p>Fractured Atlas's fiscal sponsorship program helps artists and arts organizations raise money from charitable sources.</p>
         </div>
     </div>
-    <p class="text-center"><a href="#"><button type="button" class="btn btn-default btn-lg">DONATE</button></a></p>
+    <p class="text-center"><a href="https://www.fracturedatlas.org/site/fiscal/profile?id=8385"><button type="button" class="btn btn-default btn-lg">DONATE</button></a></p>
 </div>
 
 <div id="social" class="text-center"> 

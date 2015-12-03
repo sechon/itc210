@@ -353,6 +353,11 @@ nav a#pull {
     margin-left: 15px;
 }
 
+/* Responsive Youtube */
+.youtube iframe {
+    width: 100%  !important;
+}
+
 /* Start of pill overides */
 .nav-custom > li.active > a, .nav-custom > li.active > a:hover, .nav-custom > li.active > a:focus {
     opacity: 0.5 !important;

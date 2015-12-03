@@ -66,6 +66,19 @@ https://github.com/inboundnow/cta
 
 
 */
+
+@font-face {
+    font-family: 'perspective_sansregular';
+    src: url('fonts/persans-webfont.eot');
+    src: url('fonts/persans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/persans-webfont.woff') format('woff'),
+         url('fonts/persans-webfont.ttf') format('truetype'),
+         url('fonts/persans-webfont.svg#perspective_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body { 
     padding: 60px 10px 40px 10px; 
 }

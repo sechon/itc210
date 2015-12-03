@@ -56,7 +56,7 @@
 
 <nav class="clearfix">
     <ul class="clearfix">
-        <li><a href="#home">HOME</a></li>
+        <li><a href="#top">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#dreams">DREAMS</a></li>
         <li><a href="#events">EVENTS</a></li>

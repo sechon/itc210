@@ -53,7 +53,7 @@
     <?php endif; ?>
     
 <!-- Start of tab section -->
-<div id="about">
+<a class="anchor" id="about"></a>
 <div class="dreams">
 <div class="container">
   <ul class="nav nav-pills nav-justified nav-custom">
@@ -117,10 +117,10 @@
   </div>
 </div>
 </div>
-</div><!-- close about id -->
 
     
 <!-- query for dreams -->
+<a class="anchor" id="dreams"></a>
     <?php
         $args = array(
             'pagename' => 'home 2/dreams',);
@@ -174,6 +174,7 @@
     <?php endif; ?>
 
 <!-- query for events -->
+<a class="anchor" id="events"></a>
 <div class="strike-calendar">calendar</div>
     <?php
         $args = array(
@@ -192,6 +193,7 @@
     <?php endif; ?>
     
 <!-- query for contact -->
+<a class="anchor" id="contact"></a>
 <div class="strike-contact">contact</div>
     <?php
         $args = array(

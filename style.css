@@ -145,6 +145,14 @@ nav a#pull {
     display: none;
 }
 
+/* Anchor adjustments for fixed menu */
+a.anchor {
+    display: block;
+    position: relative;
+    top: -40px;
+    visibility: hidden;
+}
+
 /* Start of Social */
 .social-logo {
     height: 35px;

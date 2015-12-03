@@ -59,7 +59,7 @@
   <ul class="nav nav-pills nav-justified nav-custom">
     <li class="active pill-one"><a data-toggle="pill" href="#about2">ABOUT</a></li>
     <li class="pill-two"><a data-toggle="pill" href="#history">HISTORY</a></li>
-    <li class="pill-three"><a data-toggle="pill" href="#book">BOOK US</a></li>
+    <li class="pill-three"><a href="#book">BOOK US</a></li>
   </ul>
 
   <div class="tab-content">
@@ -85,23 +85,6 @@
         <?php
             $args = array(
                 'pagename' => 'home 2/history-2',);
-            $query = new WP_Query($args);
-        ?>
-        <?php if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-        </p>
-    </div>
-    <div id="book" class="tab-pane fade">
-        <!-- query for book --><p>
-        <?php
-            $args = array(
-                'pagename' => 'home 2/book-tay-val-2',);
             $query = new WP_Query($args);
         ?>
         <?php if ( $query->have_posts() ) : ?>
@@ -156,6 +139,7 @@
     <?php endif; ?>
 
 <!-- query for book us -->
+<a class="anchor" id="book"></a>
 <div class="strike-book">book us</div>
     <?php
         $args = array(

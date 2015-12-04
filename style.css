@@ -80,7 +80,10 @@ https://github.com/inboundnow/cta
 }
 
 body { 
-    padding: 0px 10px 40px 10px; 
+    padding: 0px 20px 20px 20px;
+    background-image: url(http://52.11.250.158/wp-content/uploads/design-images/background-hand.png);
+    background-repeat: no-repeat;
+    background-position: top 200px;
 }
 
 * { 
@@ -92,8 +95,8 @@ body {
     height: 40px;
     width: 100%;
     background: #455868;
-    font-size: 11pt;
-    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 28pt;
+    font-family: 'perspective_sansregular', Arial, sans-serif;
     font-weight: bold;
     position: fixed;
 	z-index: 9999;

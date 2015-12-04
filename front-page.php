@@ -121,7 +121,7 @@
     <?php endif; ?>  
 
 <!-- query for testimonials -->
-<div class="strike-testimonials">testimonials</div>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/testimonials.png">
     <?php
         $args = array(
             'pagename' => 'home 2/testimonials',);
@@ -140,7 +140,7 @@
 
 <!-- query for book us -->
 <a class="anchor" id="book"></a>
-<div class="strike-book">book us</div>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/book-us.png">
     <?php
         $args = array(
             'pagename' => 'home 2/book-tay-val-2',);
@@ -159,7 +159,7 @@
 
 <!-- query for events -->
 <a class="anchor" id="events"></a>
-<div class="strike-calendar">calendar</div>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/calendar.png">
     <?php
         $args = array(
             'pagename' => 'home 2/events',);
@@ -178,7 +178,7 @@
     
 <!-- query for contact -->
 <a class="anchor" id="contact"></a>
-<div class="strike-contact">contact</div>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/contact.png">
     <?php
         $args = array(
             'pagename' => 'home 2/contact',);

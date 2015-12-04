@@ -84,6 +84,7 @@ body {
     background-image: url(http://52.11.250.158/wp-content/uploads/design-images/background-hand.png);
     background-repeat: no-repeat;
     background-position: top 200px;
+    background-size:100% auto;
 }
 
 * { 

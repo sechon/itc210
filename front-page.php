@@ -160,21 +160,21 @@
 <!-- query for events -->
 <a class="anchor" id="events"></a>
 <img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/calendar.png">
+<div class="dreams">
     <?php
-        $args = array(
-            'pagename' => 'home 2/events',);
-        $query = new WP_Query($args);
-    ?>
-    <?php if ( $query->have_posts() ) : ?>
-        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-            <div class="dreams">  
-            <?php the_content(); ?>
+        $args = array( 'numberposts' => '2', 'category' => '10' );
+        $recent_posts = wp_get_recent_posts( $args );
+    ?>  
+    <div class="row">
+        <?php foreach( $recent_posts as $recent ){?>
+            <div class="col-md-4 col-md-offset-1">
+            <?php echo '<p>' . '<a class="event-date" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_excerpt"].'</a></p>';?>
+            <?php echo '<p>' . '<a class="event-title" href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></p>';?>
+            <?php echo '<p class="event-content">' . $recent["post_content"] . '</p>';?>
             </div>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-    <?php else : ?>
-        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    <?php endif; ?>
+        <?php } ?>
+    </div>
+</div> 
     
 <!-- query for contact -->
 <a class="anchor" id="contact"></a>

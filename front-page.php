@@ -56,62 +56,71 @@
 <a class="anchor" id="about"></a>
 <div class="dreams">
 <div class="container">
-  <ul class="nav nav-pills nav-justified nav-custom">
-    <li class="active pill-one"><a data-toggle="pill" href="#about2">ABOUT</a></li>
-    <li class="pill-two"><a data-toggle="pill" href="#history">HISTORY</a></li>
-     <li class="pill-three"><a data-toggle="pill" href="#talks">TALKS</a></li>
-  </ul>
-
-  <div class="tab-content">
+<ul class="nav nav-pills nav-justified nav-custom">
+<li class="active pill-one"><a data-toggle="pill" href="#about2">ABOUT</a></li>
+<li class="pill-two"><a data-toggle="pill" href="#history">HISTORY</a></li>
+<li class="pill-three"><a data-toggle="pill" href="#talks">TALKS</a></li>
+</ul>
+    
+    <div class="tab-content">
+        
+    <!-- query for about -->
     <div id="about2" class="tab-pane fade in active">
-      <!-- query for about --><p>
-        <?php
-            $args = array(
+        <p>
+            <?php
+                $args = array(
                 'pagename' => 'home 2/about',);
-            $query = new WP_Query($args);
-        ?>
-        <?php if ( $query->have_posts() ) : ?>
+                $query = new WP_Query($args);
+            ?>
+            <?php if ( $query->have_posts() ) : ?>
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
+            <?php the_content(); ?>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
-        <?php else : ?>
+            <?php else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
+            <?php endif; ?>
         </p>
     </div>
+    
+    <!-- query for history -->
     <div id="history" class="tab-pane fade">
-      <!-- query for history --><p>
+        <p>
         <?php
             $args = array(
-                'pagename' => 'home 2/history-2',);
+            'pagename' => 'home 2/history-2',);
             $query = new WP_Query($args);
         ?>
         <?php if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+        <?php the_content(); ?>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
         <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-        </p><!-- query for talks --><p>
-        <?php
-            $args = array(
-                'pagename' => 'home 2/talks',);
-            $query = new WP_Query($args);
-        ?>
-        <?php if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
         </p>
     </div>
-  </div>
+    
+    <!-- query for talks -->
+    <div id="talks" class="tab-pane fade">
+        <p>
+        <?php
+            $args = array(
+            'pagename' => 'home 2/talks',);
+            $query = new WP_Query($args);
+        ?>
+        <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+        <?php the_content(); ?>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+        <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
+        </p>
+    </div>
+    </div>
 </div>
 </div>
 

@@ -90,6 +90,10 @@ body {
 * { 
  	font-family:'perspective_sansregular'; 
  } 
+
+p {
+    line-height: 1.4;
+}
  
  
  nav {
@@ -189,6 +193,7 @@ a.anchor {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+  line-height: 1.4;
 }
 .dreams > hr {
   border-top-color: #d5d5d5;

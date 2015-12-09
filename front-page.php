@@ -144,7 +144,7 @@
     <?php endif; ?>  
 
 <!-- query for testimonials -->
-<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/testimonials.png">
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/testimonials.png">
     <?php
         $args = array(
             'pagename' => 'home 2/testimonials',);
@@ -163,7 +163,7 @@
 
 <!-- query for book us -->
 <a class="anchor" id="book"></a>
-<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/book-us.png">
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/book-us.png">
     <?php
         $args = array(
             'pagename' => 'home 2/book-tay-val-2',);
@@ -182,7 +182,7 @@
 
 <!-- query for events -->
 <a class="anchor" id="events"></a>
-<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/calendar.png">
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/calendar.png">
 <div class="dreams">
     <?php
         $args = array( 'numberposts' => '2', 'category' => '10' );
@@ -201,7 +201,7 @@
     
 <!-- query for contact -->
 <a class="anchor" id="contact"></a>
-<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/contact.png">
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/contact.png">
     <?php
         $args = array(
             'pagename' => 'home 2/contact',);

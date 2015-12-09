@@ -172,6 +172,10 @@ a.anchor {
     display: inline;
 }
 
+#social ul li a:hover, #social ul li a:focus {
+	opacity: 0.5;
+}
+
 /* Start of dreams container */
 .dreams {
   padding: 30px;

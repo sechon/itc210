@@ -103,7 +103,7 @@ p {
     font-size: 28pt;
     font-family: 'perspective_sansregular', Arial, sans-serif;
     font-weight: bold;
-	color: #d16252;
+	color: #d16252 !important;
 	text-align: left;
     position: fixed;
 	z-index: 9999;

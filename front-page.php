@@ -53,13 +53,13 @@
     <?php endif; ?>
     
 <!-- Start of tab section -->
-<div id="about">
+<a class="anchor" id="about"></a>
 <div class="dreams">
 <div class="container">
   <ul class="nav nav-pills nav-justified nav-custom">
     <li class="active pill-one"><a data-toggle="pill" href="#about2">ABOUT</a></li>
     <li class="pill-two"><a data-toggle="pill" href="#history">HISTORY</a></li>
-    <li class="pill-three"><a data-toggle="pill" href="#book">BOOK US</a></li>
+    <li class="pill-three"><a href="#book">BOOK US</a></li>
   </ul>
 
   <div class="tab-content">
@@ -97,30 +97,13 @@
         <?php endif; ?>
         </p>
     </div>
-    <div id="book" class="tab-pane fade">
-        <!-- query for book --><p>
-        <?php
-            $args = array(
-                'pagename' => 'home 2/book-tay-val-2',);
-            $query = new WP_Query($args);
-        ?>
-        <?php if ( $query->have_posts() ) : ?>
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-        </p>
-    </div>
   </div>
 </div>
 </div>
-</div><!-- close about id -->
 
     
 <!-- query for dreams -->
+<a class="anchor" id="dreams"></a>
     <?php
         $args = array(
             'pagename' => 'home 2/dreams',);
@@ -138,7 +121,7 @@
     <?php endif; ?>  
 
 <!-- query for testimonials -->
-<div class="strike-testimonials">testimonials</div>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/testimonials.png">
     <?php
         $args = array(
             'pagename' => 'home 2/testimonials',);
@@ -156,7 +139,8 @@
     <?php endif; ?>
 
 <!-- query for book us -->
-<div class="strike-book">book us</div>
+<a class="anchor" id="book"></a>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/book-us.png">
     <?php
         $args = array(
             'pagename' => 'home 2/book-tay-val-2',);
@@ -174,7 +158,8 @@
     <?php endif; ?>
 
 <!-- query for events -->
-<div class="strike-calendar">calendar</div>
+<a class="anchor" id="events"></a>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/calendar.png">
     <?php
         $args = array(
             'pagename' => 'home 2/events',);
@@ -192,7 +177,8 @@
     <?php endif; ?>
     
 <!-- query for contact -->
-<div class="strike-contact">contact</div>
+<a class="anchor" id="contact"></a>
+<img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/design-images/contact.png">
     <?php
         $args = array(
             'pagename' => 'home 2/contact',);

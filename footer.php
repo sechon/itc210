@@ -2,33 +2,40 @@
 
     </div> <!-- /container -->
 
-<div class="subscribe">
-    <div class="row">
-        <div class="col-md-6">
-        <p>If you'd like to be the first to know when we have swesome events going on in your city, do sign up for updates!</p>
-        </div>
-         <div class="col-md-6">
-        <p><input type="name" name="NAME" placeholder="Name" required />
-        <input type="email" name="EMAIL" placeholder="Your email address" required />
-        <input type="submit" class="btn btn-default btn-md" value="SUBSCRIBE" />
-        </p>
-        </div>
-    </div>
-</div>
+<!-- query for subscribe -->
+    <?php
+        $args = array(
+            'pagename' => 'home-2/subscribe',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="subscribe">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
 
-<div class="donate">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Support Dreams Unlimited</h3>
-            <p>Fractured Atlas is a 501(c)(3) public charity. Contributions for the pirposes of Dreams Unlimited are tax-deductable to the extent permitted by law.</p>
-        </div>    
-        <div class="col-md-6">
-            <h3>About Fiscal Sponsorship</h3>
-            <p>Fractured Atlas's fiscal sponsorship program helps artists and arts organizations raise money from charitable sources.</p>
-        </div>
-    </div>
-    <p class="text-center"><a href="https://www.fracturedatlas.org/site/fiscal/profile?id=8385" target="blank"><button type="button" class="btn btn-default btn-lg">DONATE</button></a></p>
-</div>
+<!-- query for donate -->
+    <?php
+        $args = array(
+            'pagename' => 'home-2/donate',);
+        $query = new WP_Query($args);
+    ?>
+    <?php if ( $query->have_posts() ) : ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="donate">
+            <?php the_content(); ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+    <?php else : ?>
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+    <?php endif; ?>
+
 
 <div id="social" class="text-center"> 
         <ul>

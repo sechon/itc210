@@ -159,8 +159,8 @@ a.anchor {
 
 /* Start of Social */
 .social-logo {
-    height: 35px;
-    width: 35px;
+    height: 60px;
+    width: 60px;
 }
 
 #social ul {
@@ -217,10 +217,34 @@ a.anchor {
     width: 100%;
 }
 
+/* Start events section styling */
+.event-date {
+    text-decoration: none !important;
+    font-size: 40px !important;
+    color: #3d3d3c !important;
+}
+
+.event-title {
+    text-decoration: none !important;
+    font-size: 40px !important;
+    color: #e6342a !important;
+}
+
+.event-content {
+    font-size: 21px !important;
+    color: #3d3d3c !important;
+}
+
 /* Responsive Youtube */
 .youtube iframe {
     width: 100%  !important;
 }
+
+/* Form adjustments */
+textarea, input {
+	width: 90%;
+}
+
 
 /* Start of pill overides */
 .nav-custom > li.active > a, .nav-custom > li.active > a:hover, .nav-custom > li.active > a:focus {

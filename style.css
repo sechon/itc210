@@ -169,7 +169,7 @@ nav a#pull {
     position: fixed !important;
     left: 5px;
     z-index: 99999;
-
+    text-decoration: none !important;
 }
 
 .hamburger-mobile {
@@ -177,6 +177,7 @@ nav a#pull {
     position: fixed !important;
     font-size:26pt;
     z-index: 99999;
+    text-decoration: none !important;
 }
 
 /* Anchor adjustments for fixed menu */

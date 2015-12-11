@@ -380,11 +380,13 @@ textarea, input {
     }
 }
 
-	div.huge_it_slideshow_description_text_3 {
+	div.huge_it_slideshow_description_text_2 {
 	
 	color: black !important; 
 	font-family: 'perspective_sansregular', Arial, sans-serif !important;
-	font-size: 18px !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	line-height: 2em !important;
 	width: 800px !important;
 	height: 375px !important;
 	text-align:center !important;

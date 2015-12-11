@@ -54,15 +54,19 @@
 
 <!-- Start of Navigation -->
 
+<!-- Start of Navigation -->
+
+<a href="#" class="hamburger">MENU &#62;></a>
+<a href="#" class="hamburger-mobile">&#9776;</a>
+<div class="top-nav-bar"></div>    
 <nav class="clearfix">
     <ul class="clearfix">
-        <li><a href="#top">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#dreams">DREAMS</a></li>
-        <li><a href="#events">EVENTS</a></li>
-        <li><a href="#contact">CONTACT</a></li> 
+        <li class="col-md-2"><a href="#top">HOME</a></li>
+        <li class="col-md-2"><a href="#about">ABOUT</a></li>
+        <li class="col-md-2"><a href="#dreams">DREAMS</a></li>
+        <li class="col-md-2"><a href="#events">EVENTS</a></li>
+        <li class="col-md-2"><a href="#contact">CONTACT</a></li>
     </ul>
-    <a href="#" id="pull">Menu</a>
 </nav>
 
     

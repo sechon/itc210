@@ -386,6 +386,10 @@ textarea, input {
         left: 10px;
     }
     
+    .top-nav-bar {
+        display: none;    
+    }
+    
     nav { 
         height: auto;
         left: 0px;
@@ -407,11 +411,12 @@ textarea, input {
     nav a {
         text-align: center;
         width: 100%;
-        text-indent: 25px;
     }
 }
 @media only screen and (max-width : 480px) {
-    
+    body {
+        padding: 0px;    
+    }
     
     nav {
         border-bottom: 0;

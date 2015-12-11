@@ -380,11 +380,16 @@ textarea, input {
     }
 }
 
-.huge_it_slideshow_title_text_2 {
+	div.huge_it_slideshow_description_text_3 {
 	
-	color: #6e6e6e !important; 
+	color: black !important; 
 	font-family: 'perspective_sansregular', Arial, sans-serif !important;
-	font-size: 32pt !important;
+	font-size: 18px !important;
+	width: 800px !important;
+	height: 375px !important;
+	text-align:center !important;
+	background: none !important;
+	
 	
 }
 

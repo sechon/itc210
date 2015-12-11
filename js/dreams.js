@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".clearfix").hide();
     $(".hamburger").click(function(){
             $(".clearfix").slideToggle();
+            return false;
     });
 });
 
@@ -9,6 +10,7 @@ $(document).ready(function(){
     $(".clearfix").hide();
     $(".hamburger-mobile").click(function(){
             $(".clearfix").slideToggle();
+            return false;
     });
 });
 
@@ -35,7 +37,7 @@ $(document).ready(function(){
 
 
 
-$(window).load(function() {
+$(document).ready(function() {
     $('.dreams').raptorize({
         'enterOn' : 'konami-code'
     });
@@ -140,7 +142,7 @@ $(window).load(function() {
 			        	init();
 			        	$(window).unbind('keydown.raptorz');
 			        }
-			    }, true);
+			    });
 	
 			}
 			

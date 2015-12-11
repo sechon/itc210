@@ -26,10 +26,10 @@
 	<title><?php bloginfo("name") . wp_title( '|' ); ?></title>
 	
 	<?php wp_head(); ?>
-	
-        <script src="https://ajax.googleapis.com/ajax/libs/ext-core/3.1.0/ext-core.js"></script>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/dreams.js">
-    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/dreams.js"> </script>
+
 
 </head>
 

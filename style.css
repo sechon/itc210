@@ -236,8 +236,8 @@ a.anchor {
 }
 @media screen and (min-width: 768px) {
   .dreams {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .container .dreams,
   .container-fluid .dreams {
@@ -392,7 +392,7 @@ img {
 
 @media screen and (max-width: 600px) {
     .hamburger {
-        display: none;    
+        display: none; 
     }
     
     .hamburger-mobile {
@@ -408,6 +408,7 @@ img {
     nav { 
         height: auto;
         left: 0px;
+        width: 100% !important;
     }
     nav ul {
         width: 100%;

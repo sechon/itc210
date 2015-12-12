@@ -44,7 +44,7 @@
 <div class="top-nav-bar"></div>    
 <nav class="clearfix">
     <ul class="clearfix">
-        <li class="col-md-2"><a href="#top">HOME</a></li>
+        <li class="col-md-2"><a href="#home">HOME</a></li>
         <li class="col-md-2"><a href="#about">ABOUT</a></li>
         <li class="col-md-2"><a href="#dreams">DREAMS</a></li>
         <li class="col-md-2"><a href="#events">EVENTS</a></li>

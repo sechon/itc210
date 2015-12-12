@@ -76,8 +76,8 @@ $(document).ready(function() {
 			}
 			
 			//Raptor Vars
-			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="http://spencerechon.com/dreams/rainbow.gif" />'
-			var raptorAudioMarkup = '<audio id="elRaptorShriek" preload="auto"><source src="http://spencerechon.com/dreams/dreams.mp3" /><source src="http://spencerechon.com/dreams/dreams.ogg" /></audio>';	
+			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="http://52.11.250.158/wp-content/uploads/design-images/rainbow.gif" />'
+			var raptorAudioMarkup = '<audio id="elRaptorShriek" preload="auto"><source src="http://52.11.250.158/wp-content/uploads/design-images/dreams.mp3" /><source src="http://52.11.250.158/wp-content/uploads/design-images/dreams.ogg" /></audio>';	
 			var locked = false;
 			
 			//Append Raptor and Style

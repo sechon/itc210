@@ -286,6 +286,7 @@ textarea, input {
 /* Start of pill overides */
 .nav-custom > li.active > a, .nav-custom > li.active > a:hover, .nav-custom > li.active > a:focus {
     opacity: 0.5 !important;
+    box-shadow: none;
 }
 
 .nav-custom > li > a {
@@ -294,14 +295,17 @@ textarea, input {
 
 .nav-custom > li.pill-one > a {
     background-color:rgb(237, 148, 34)  !important;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .nav-custom > li.pill-two > a {
     background-color:rgb(189, 21, 34)  !important;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .nav-custom > li.pill-three > a {
     background-color:rgb(230, 46, 46)  !important;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .nav-custom > li > a {
@@ -313,6 +317,15 @@ textarea, input {
 
 .nav-custom > li {
     padding: 10px  !important;
+}
+
+/* Image shadows */
+img {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.no-shadow {
+    box-shadow: none;
 }
 
 /* Start of footer containers */

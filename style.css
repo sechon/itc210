@@ -256,6 +256,10 @@ a.anchor {
     border-radius: 25px;
 }
 
+.divider-red {
+    border-top: thick solid #be1622; 
+}
+
 /* Start events section styling */
 .event-date {
     text-decoration: none !important;

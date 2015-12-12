@@ -193,6 +193,7 @@ a.anchor {
     height: 80px;
     width: 80px;
     padding: 10px;
+    box-shadow: none;
 }
 
 #social ul {

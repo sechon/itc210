@@ -54,5 +54,10 @@
 </footer>
 <?php wp_footer(); ?>
 
+<!-- Start scripts -->
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/toggle.js"> </script>
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/dreams.js"> </script>
+
+
   </body>
 </html>

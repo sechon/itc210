@@ -1,3 +1,4 @@
+//start slide toggle for menu
 $(document).ready(function(){
     $(".clearfix").hide();
     $(".hamburger").click(function(){
@@ -8,12 +9,13 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".clearfix").hide();
-    $(".hamburger-mobile").click(function(){
+    $("#nav-toggle").click(function(){
             $(".clearfix").slideToggle();
             return false;
     });
 });
 
+//start slide animation for anchors
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -28,6 +30,10 @@ $(function() {
     }
   });
 });
+
+
+
+
 
 
 
@@ -67,7 +73,6 @@ $(document).ready(function() {
 
 
 (function($) {
-
     $.fn.raptorize = function(options) {
 
         //Yo' defaults

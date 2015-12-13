@@ -95,7 +95,7 @@ p {
     line-height: 1.6;
 }
  
- /* Start Nav */
+/* Start Nav */
 .top-nav-bar {
     height: 52px;
     width: 100%;
@@ -107,15 +107,12 @@ p {
 }
 
  nav {
-    height: 40px;
-	margin-bottom: 10px;
     font-size: 28pt;
     font-family: 'perspective_sansregular', Arial, sans-serif;
     font-weight: bold;
 	text-align: left;
     position: fixed;
 	z-index: 9999;
-    left: 140px;
     width: 100%;
 }
 nav ul {
@@ -143,9 +140,14 @@ nav li {
 nav a {
     display: inline-block;
     text-align: left;
-    text-decoration: none;
+    text-decoration: none !important;
     line-height: 40px;
     padding: 0px 20px;
+    margin-right: 20px;
+    color: #d16252;
+}
+nav ul {
+    margin-top: 0px;
 }
 nav li a {
     box-sizing:border-box;
@@ -156,7 +158,7 @@ nav li:last-child a {
     border-right: 0;
 }
 nav a:hover, nav a:active {
-    background-color: #8c99a4;
+    color: #3d3d3c;
 }
 nav a#pull {
     display: none;
@@ -170,14 +172,54 @@ nav a#pull {
     left: 5px;
     z-index: 99999;
     text-decoration: none !important;
+    color: #d16252;
+
+}
+.hamburger:hover, .hamburger:active {
+    color: #3d3d3c;
 }
 
-.hamburger-mobile {
+#nav-toggle { 
     display:none;
     position: fixed !important;
     font-size:26pt;
     z-index: 99999;
     text-decoration: none !important;
+    color: #d16252;
+}
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #d16252;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }
 
 /* Anchor adjustments for fixed menu */
@@ -365,9 +407,17 @@ img {
 }
 
 
+/* Start Nav Media Queries */
+@media screen and (max-width: 1200px) {
+    nav a {
+        margin-right: 0px;    
+    }
+}
+
 @media screen and (max-width: 1100px) {
     nav, .hamburger{
         font-size: 24pt;
+        line-height: 40px;
     }
     
     .clearfix li {
@@ -379,15 +429,19 @@ img {
     nav, .hamburger{
         font-size: 20pt;
     }
-
+    
+    a.anchor {
+        top: -40px;
+    }
+    
+    .top-nav-bar {
+        height: 40px;    
+    }
 }
 
 @media screen and (max-width: 800px) {
     nav, .hamburger {
         font-size: 16pt;
-    }
-    nav {
-        left: 110px;
     }
     nav a {
         padding: 0px 20px 0px 0px;
@@ -396,23 +450,28 @@ img {
 
 @media screen and (max-width: 600px) {
     .hamburger {
-        display: none; 
+        display: none;    
     }
     
-    .hamburger-mobile {
+    #nav-toggle {
         display: block;
-        top: 0px;
-        left: 10px;
+        top: 10px;
     }
     
     .top-nav-bar {
-        display: none;    
+        background: none;  
+    }
+    
+    a.anchor {
+        top: -205px;
     }
     
     nav { 
         height: auto;
         left: 0px;
         width: 100% !important;
+        padding-right: 15% !important;
+        padding-left: 15% !important;
     }
     nav ul {
         width: 100%;
@@ -423,15 +482,18 @@ img {
         width: 100%;
         float: left;
         position: relative;
+        background: white;
     }
     nav li a {
-        border-bottom: 1px solid #576979;
-        border-right: 1px solid #576979;
+        border: 1px solid #3d3d3c;
+        
     }
     nav a {
         text-align: center;
         width: 100%;
+        padding: 0px;
     }
+
 }
 @media only screen and (max-width : 480px) {
     body {
@@ -472,6 +534,7 @@ img {
         border-bottom: 1px solid #576979;
     }
 }
+
 
 
 

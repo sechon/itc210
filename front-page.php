@@ -53,7 +53,7 @@
     <?php endif; ?>
     
 <!-- Start of tab section -->
-<a class="anchor" id="about"></a>
+<a class="anchor" id="menu-about"></a>
 <div class="dreams">
 <div class="container">
 <ul class="nav nav-pills nav-justified nav-custom">
@@ -126,7 +126,7 @@
 
     
 <!-- query for dreams -->
-<a class="anchor" id="dreams"></a>
+<a class="anchor" id="menu-dreams"></a>
     <?php
         $args = array(
             'pagename' => 'home 2/dreams',);
@@ -162,7 +162,7 @@
     <?php endif; ?>
 
 <!-- query for book us -->
-<a class="anchor" id="book"></a>
+<a class="anchor" id="menu-book"></a>
 <img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/book-us.png">
     <?php
         $args = array(
@@ -181,7 +181,7 @@
     <?php endif; ?>
 
 <!-- query for events -->
-<a class="anchor" id="events"></a>
+<a class="anchor" id="menu-events"></a>
 <img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/calendar.png">
 <div class="dreams">
     <?php
@@ -200,7 +200,7 @@
 </div> 
     
 <!-- query for contact -->
-<a class="anchor" id="contact"></a>
+<a class="anchor" id="menu-contact"></a>
 <img class="img-responsive dividers" src="http://52.11.250.158/wp-content/uploads/2015/12/contact.png">
     <?php
         $args = array(

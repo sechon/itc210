@@ -43,11 +43,11 @@
         </div>   
         <nav class="clearfix col-xs-10">
             <ul class="clearfix">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#dreams">DREAMS</a></li>
-                <li><a href="#events">EVENTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#menu-home">HOME</a></li>
+                <li><a href="#menu-about">ABOUT</a></li>
+                <li><a href="#menu-dreams">DREAMS</a></li>
+                <li><a href="#menu-events">EVENTS</a></li>
+                <li><a href="#menu-contact">CONTACT</a></li>
             </ul>
         </nav>
     </div> 

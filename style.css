@@ -380,7 +380,7 @@ img {
 .subscribe {
     padding: 30px;
     color: white;
-    background-color: #d35b64;
+    background-color: #ec654d;
     border-radius: 6px;
     
 }
@@ -394,7 +394,7 @@ img {
 .donate {
     padding: 10px 30px;
     color:black;
-    background-color: #999999;
+    background-color: #b2b2b2;
     border-radius: 6px;
     margin-bottom: 30px;
     
@@ -544,6 +544,27 @@ img {
     border: 6px solid #000 !important;
     padding: 8px 25px !important;
     background-color: #b2b2b2 !important;
+}
+
+.btn-lg:hover,
+.btn-lg:focus {
+    background-color: #000 !important;
+    color: #b2b2b2 !important;
+}
+
+.btn-md {
+    font-size: 21px !important;
+    border-radius: 0px !important;
+    border: 5px solid #fff !important;
+    padding: 8px 25px !important;
+    background-color: #ec654d !important;
+    color: #fff !important;
+}
+
+.btn-md:hover,
+.btn-md:focus {
+    background-color: #000 !important;
+    color: #b2b2b2 !important;
 }
 
 

@@ -541,9 +541,11 @@ img {
 .btn-lg {
     font-size: 26px !important;
     border-radius: 0px !important;
-    border: 6px solid: #000 !important;
+    border: 6px solid #000 !important;
     padding: 8px 25px !important;
+    background-color: #b2b2b2 !important;
 }
+
 
 div.huge_it_slideshow_description_text_2 {
 	

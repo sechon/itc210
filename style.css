@@ -567,6 +567,19 @@ img {
     color: #b2b2b2 !important;
 }
 
+.wpcf7-submit {
+    font-size: 26px !important;
+    border-radius: 0px !important;
+    padding: 8px 25px !important;
+    background-color: #d2d2d2 !important;
+    width: auto;
+}
+
+.wpcf7-submit:hover,
+.wpcf7-submit:focus {
+    opacity: 0.5 !important;
+}
+
 
 div.huge_it_slideshow_description_text_2 {
 	

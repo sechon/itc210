@@ -1,0 +1,220 @@
+/*
+Theme Name: itc210
+Theme URI: http://52.11.250.158
+Description: A theme for Dreams Unilimited
+Author: Kristie Barker, Spencer Echon
+Author URI: http://kb-my-portfolio.com
+Version: 1.0
+Tags:
+License:
+License URI:
+General comments (optional).
+*/
+
+/*
+Plugins used:
+
+WP Migrate DB-
+https://deliciousbrains.com/
+
+We may use this to move the old Dreams Unlimited site into one document.
+
+Wordpress Importer-
+https://wordpress.org/plugins/wordpress-importer/
+
+If we don't use WP Migrate, we will use this plugin to import the old Dreams Unlimited site to our server.
+
+Events Manager-
+http://wp-events-plugin.com/
+
+We will use this plugin to manage the events calendar.
+
+Gallery-
+https://web-dorado.com/products/wordpress-photo-gallery-plugin.html
+
+We will use this plugin to manage the Dream Journal photos.
+
+Youtube-
+http://www.embedplus.com/
+
+We will use this plugin to manage our Youtube feed.
+
+Facebook-
+https://wordpress.org/plugins/facebook/
+	Used to connect facebook with the website
+	Ability to embed facebook posts
+
+MashShare-
+https://www.mashshare.net/
+	All in one social media sharing tool
+
+Giga Slider-
+http://www.wp-buy.com/
+	Slider based content management for videos/photos
+
+Mailchimp-
+http://mailchimp.com/
+	Used for newsletter signup
+
+Contact Form 7-
+http://contactform7.com/
+	Used to create forms for the contact page
+
+Wordpress Calls to Action-
+https://github.com/inboundnow/cta
+	Adds calls to action for any photos or posts
+
+
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+body { 
+    padding-top: 60px; 
+    padding-bottom: 40px; 
+}
+
+<<<<<<< HEAD
+
+
+* { 
+ 	font-family:'arial'; 
+ } 
+ .main { 
+ 	max-width:900px; 
+ 	margin:0 auto; 
+ 	padding:50px 30px; 
+ }
+ .navigation ul { 
+ 	height:40px;  
+ 	padding:0 10px 0 0; 
+ 	background:#2e8b6b; 
+ 	border-radius:4px; 
+ 	margin:0 0 0 0; 
+ } 
+ .navigation ul li { 
+ 	float:left; 
+ 	list-style:none;		  
+ 	border-right:1px solid #1e7759; 
+ 	padding:10px 20px 10px 20px; 
+ } 
+ .navigation ul li:first-child{ 
+ 	padding-left:50px; 
+ 	border-radius:4px 0 0 4px; 
+ } 
+ .navigation ul li:hover { 
+ 	background:#47987c; 
+ } 
+ .navigation ul li a { 
+ 	color:#fff; 
+ 	font-size:12px; 
+ 	text-decoration:none; 
+ 	text-shadow: 1px 1px 1px #000 
+ } 
+ .navigation ul li a:hover{		  
+ 	text-decoration:underline; 
+ } 
+ .hidden { 
+ 	display:none; 
+ } 
+ 
+ 
+ .mini-navigation { 
+ 	border-left:1px solid #ccc; 
+ 	border-bottom:1px solid #ccc; 
+ 	border-right:1px solid #ccc; 
+ 	padding:0 0 0 0; 
+ 	margin-left:5px; 
+ 	margin-right:5px; 
+ 	border-radius:0 0 8px 8px; 
+ } 
+ .mini-navigation ul { 
+ 	padding:0 0 0 0; 
+ 	margin:0 0 0 0; 
+ } 
+ .mini-navigation ul li { 
+ 	margin:0 0 0 0; 
+ 	padding:10px 18px 12px 23px; 
+ 	list-style:none; 
+ 	border-bottom:1px solid #ebebeb; 
+ } 
+ .mini-navigation ul li:hover { 
+ 	background:#f6f6f6; 
+ } 
+ .mini-navigation ul li a { 
+ 	text-decoration:none; 
+ 	font-size:12px; 
+ 	color:#1e7759; 
+ } 
+ .mini-navigation ul li a:hover { 
+ 	text-decoration:underline; 
+ } 
+ .mini-navigation ul li:last-child{ 
+ 	border-bottom:none; 
+ 	padding-bottom:15px; 
+ } 
+ .mini-navigation ul li:last-child:hover { 
+ 	border-radius:0 0 8px 8px; 
+ } 
+ 
+ 
+ @media (max-width: 796px) { 
+ 	 .navigation.responsive ul li { 
+ 		display:none; 
+ 	 } 
+ 	 .navigation.responsive ul li.hidden { 
+ 		display:block; 
+ 	 } 
+ 	 .navigation.responsive ul li.hidden:hover { 
+ 		border-radius:4px 0 0 4px; 
+ 	 } 
+ 	 .navigation.responsive ul li.hidden a{ 
+ 		background:url('menu.png')no-repeat 0 -5px; 
+ 		padding-left:24px; 
+ 	} 
+ 	 
+ } 
+=======
+/* Start of Navigation */
+.navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    list-style-type: none;
+}
+
+.navi ul {
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.navi ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.navi ul li a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navi ul li a:hover {
+    color: black;
+}
+
+/* Start of Social */
+.social-logo {
+    height: 35px;
+    width: 35px;
+}
+
+#social ul li{
+    list-style:none;
+    display: inline;
+>>>>>>> origin/master
